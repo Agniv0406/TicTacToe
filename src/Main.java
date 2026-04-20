@@ -1,19 +1,18 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
-        int result;
-        System.out.println("Coin toss result");
-        Random random = new Random();
-        result = random.nextInt(2);
-        System.out.println(result);
-        if(result == 0) {
-            System.out.println("Player 1 - X");
-            System.out.println("Player 2 - O");
-        }
-        else {
-            System.out.println("Player 1 - O");
-            System.out.println("Player 2- X");
+        Scanner sc = new Scanner(System.in);
+        int num,i;
+        String ch;
+        for(i=1;i<=9;i++){
+            System.out.println("Select slot : ");
+            num = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Slot selected : " + num);
+            ch = sc.nextLine();
+            System.out.println("Character in slot selected : " + ch);
         }
     }
 }
